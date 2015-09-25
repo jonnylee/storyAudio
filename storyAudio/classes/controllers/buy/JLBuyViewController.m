@@ -1,20 +1,18 @@
 //
-//  JLStoreViewController.m
+//  JLBuyViewController.m
 //  storyAudio
 //
 //  Created by LiuJianxun on 9/25/15.
 //  Copyright (c) 2015 jonny. All rights reserved.
 //
 
-#import "JLStoreViewController.h"
+#import "JLBuyViewController.h"
 
-@interface JLStoreViewController ()
-
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@interface JLBuyViewController ()
 
 @end
 
-@implementation JLStoreViewController
+@implementation JLBuyViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -81,9 +79,9 @@
     }
     
     if(indexPath.row == 0){
-        cell.textLabel.text = @"阿里巴巴与四十大盗";
+        cell.textLabel.text = @"故事商城";
     }else{
-        cell.textLabel.text = @"小白兔与大灰狼";
+        cell.textLabel.text = @"我的购买";
     }
     
     cell.accessoryType = UITableViewCellAccessoryNone;
@@ -92,7 +90,6 @@
     return cell;
     
 }
-
 
 
 @end

@@ -26,12 +26,19 @@
     
 }
 
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
 
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];// 取消选中
     
+    if (indexPath.row == 1) {
+        
+    }
     
 }
 
@@ -88,16 +95,11 @@
     }
     
     cell.accessoryType = UITableViewCellAccessoryNone;
-//    cell.selectionStyle = UITableViewCellSelectionStyleNone;//设置点击后没有效果
+    //    cell.selectionStyle = UITableViewCellSelectionStyleNone;//设置点击后没有效果
     
     return cell;
     
 }
 
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 @end

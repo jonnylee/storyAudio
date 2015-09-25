@@ -18,10 +18,14 @@
 		FBD7BBDF1BB43669001C9D34 /* storyAudioTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD7BBDE1BB43669001C9D34 /* storyAudioTests.m */; };
 		FBD7BBF61BB45437001C9D34 /* JLMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD7BBF41BB45437001C9D34 /* JLMainViewController.m */; };
 		FBD7BBF71BB45437001C9D34 /* JLMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBD7BBF51BB45437001C9D34 /* JLMainViewController.xib */; };
-		FBD7BBFC1BB454C2001C9D34 /* JLMainViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD7BBFA1BB454C2001C9D34 /* JLMainViewTableViewCell.m */; };
-		FBD7BBFD1BB454C2001C9D34 /* JLMainViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBD7BBFB1BB454C2001C9D34 /* JLMainViewTableViewCell.xib */; };
 		FBE1A9061BB525D600B93B72 /* JLStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE1A9041BB525D600B93B72 /* JLStoreViewController.m */; };
 		FBE1A9071BB525D600B93B72 /* JLStoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE1A9051BB525D600B93B72 /* JLStoreViewController.xib */; };
+		FBE1A90D1BB527AD00B93B72 /* JLMainViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE1A90B1BB527AD00B93B72 /* JLMainViewTableViewCell.m */; };
+		FBE1A90E1BB527AD00B93B72 /* JLMainViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE1A90C1BB527AD00B93B72 /* JLMainViewTableViewCell.xib */; };
+		FBE1A9141BB52C6F00B93B72 /* JLBuyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE1A9121BB52C6F00B93B72 /* JLBuyViewController.m */; };
+		FBE1A9151BB52C6F00B93B72 /* JLBuyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE1A9131BB52C6F00B93B72 /* JLBuyViewController.xib */; };
+		FBE1A9191BB52CA400B93B72 /* JLBuyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE1A9171BB52CA400B93B72 /* JLBuyTableViewCell.m */; };
+		FBE1A91A1BB52CA400B93B72 /* JLBuyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE1A9181BB52CA400B93B72 /* JLBuyTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,12 +59,18 @@
 		FBD7BBF31BB45437001C9D34 /* JLMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLMainViewController.h; sourceTree = "<group>"; };
 		FBD7BBF41BB45437001C9D34 /* JLMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLMainViewController.m; sourceTree = "<group>"; };
 		FBD7BBF51BB45437001C9D34 /* JLMainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JLMainViewController.xib; sourceTree = "<group>"; };
-		FBD7BBF91BB454C2001C9D34 /* JLMainViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLMainViewTableViewCell.h; sourceTree = "<group>"; };
-		FBD7BBFA1BB454C2001C9D34 /* JLMainViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLMainViewTableViewCell.m; sourceTree = "<group>"; };
-		FBD7BBFB1BB454C2001C9D34 /* JLMainViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JLMainViewTableViewCell.xib; sourceTree = "<group>"; };
 		FBE1A9031BB525D600B93B72 /* JLStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLStoreViewController.h; sourceTree = "<group>"; };
 		FBE1A9041BB525D600B93B72 /* JLStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLStoreViewController.m; sourceTree = "<group>"; };
 		FBE1A9051BB525D600B93B72 /* JLStoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JLStoreViewController.xib; sourceTree = "<group>"; };
+		FBE1A90A1BB527AD00B93B72 /* JLMainViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JLMainViewTableViewCell.h; path = storyAudio/classes/controllers/main/view/JLMainViewTableViewCell.h; sourceTree = SOURCE_ROOT; };
+		FBE1A90B1BB527AD00B93B72 /* JLMainViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = JLMainViewTableViewCell.m; path = storyAudio/classes/controllers/main/view/JLMainViewTableViewCell.m; sourceTree = SOURCE_ROOT; };
+		FBE1A90C1BB527AD00B93B72 /* JLMainViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = JLMainViewTableViewCell.xib; path = storyAudio/classes/controllers/main/view/JLMainViewTableViewCell.xib; sourceTree = SOURCE_ROOT; };
+		FBE1A9111BB52C6F00B93B72 /* JLBuyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLBuyViewController.h; sourceTree = "<group>"; };
+		FBE1A9121BB52C6F00B93B72 /* JLBuyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLBuyViewController.m; sourceTree = "<group>"; };
+		FBE1A9131BB52C6F00B93B72 /* JLBuyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JLBuyViewController.xib; sourceTree = "<group>"; };
+		FBE1A9161BB52CA400B93B72 /* JLBuyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLBuyTableViewCell.h; sourceTree = "<group>"; };
+		FBE1A9171BB52CA400B93B72 /* JLBuyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLBuyTableViewCell.m; sourceTree = "<group>"; };
+		FBE1A9181BB52CA400B93B72 /* JLBuyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JLBuyTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -233,6 +243,10 @@
 		FBD7BBF01BB45411001C9D34 /* buy */ = {
 			isa = PBXGroup;
 			children = (
+				FBE1A9101BB52C3900B93B72 /* view */,
+				FBE1A9111BB52C6F00B93B72 /* JLBuyViewController.h */,
+				FBE1A9121BB52C6F00B93B72 /* JLBuyViewController.m */,
+				FBE1A9131BB52C6F00B93B72 /* JLBuyViewController.xib */,
 			);
 			path = buy;
 			sourceTree = "<group>";
@@ -240,7 +254,7 @@
 		FBD7BBF11BB45411001C9D34 /* main */ = {
 			isa = PBXGroup;
 			children = (
-				FBD7BBF81BB454A4001C9D34 /* view */,
+				FBE1A9091BB5279200B93B72 /* view */,
 				FBD7BBF31BB45437001C9D34 /* JLMainViewController.h */,
 				FBD7BBF41BB45437001C9D34 /* JLMainViewController.m */,
 				FBD7BBF51BB45437001C9D34 /* JLMainViewController.xib */,
@@ -251,6 +265,7 @@
 		FBD7BBF21BB45411001C9D34 /* store */ = {
 			isa = PBXGroup;
 			children = (
+				FBE1A90F1BB527B900B93B72 /* view */,
 				FBE1A9031BB525D600B93B72 /* JLStoreViewController.h */,
 				FBE1A9041BB525D600B93B72 /* JLStoreViewController.m */,
 				FBE1A9051BB525D600B93B72 /* JLStoreViewController.xib */,
@@ -258,12 +273,30 @@
 			path = store;
 			sourceTree = "<group>";
 		};
-		FBD7BBF81BB454A4001C9D34 /* view */ = {
+		FBE1A9091BB5279200B93B72 /* view */ = {
 			isa = PBXGroup;
 			children = (
-				FBD7BBF91BB454C2001C9D34 /* JLMainViewTableViewCell.h */,
-				FBD7BBFA1BB454C2001C9D34 /* JLMainViewTableViewCell.m */,
-				FBD7BBFB1BB454C2001C9D34 /* JLMainViewTableViewCell.xib */,
+				FBE1A90A1BB527AD00B93B72 /* JLMainViewTableViewCell.h */,
+				FBE1A90B1BB527AD00B93B72 /* JLMainViewTableViewCell.m */,
+				FBE1A90C1BB527AD00B93B72 /* JLMainViewTableViewCell.xib */,
+			);
+			name = view;
+			path = storyAudio/classes/controllers/store/view;
+			sourceTree = SOURCE_ROOT;
+		};
+		FBE1A90F1BB527B900B93B72 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FBE1A9101BB52C3900B93B72 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FBE1A9161BB52CA400B93B72 /* JLBuyTableViewCell.h */,
+				FBE1A9171BB52CA400B93B72 /* JLBuyTableViewCell.m */,
+				FBE1A9181BB52CA400B93B72 /* JLBuyTableViewCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -350,10 +383,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE1A91A1BB52CA400B93B72 /* JLBuyTableViewCell.xib in Resources */,
 				FBD7BBCE1BB43669001C9D34 /* Main.storyboard in Resources */,
+				FBE1A9151BB52C6F00B93B72 /* JLBuyViewController.xib in Resources */,
+				FBE1A90E1BB527AD00B93B72 /* JLMainViewTableViewCell.xib in Resources */,
 				FBD7BBD31BB43669001C9D34 /* LaunchScreen.xib in Resources */,
 				FBD7BBD01BB43669001C9D34 /* Images.xcassets in Resources */,
-				FBD7BBFD1BB454C2001C9D34 /* JLMainViewTableViewCell.xib in Resources */,
 				FBE1A9071BB525D600B93B72 /* JLStoreViewController.xib in Resources */,
 				FBD7BBF71BB45437001C9D34 /* JLMainViewController.xib in Resources */,
 			);
@@ -406,11 +441,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE1A9191BB52CA400B93B72 /* JLBuyTableViewCell.m in Sources */,
 				FBE1A9061BB525D600B93B72 /* JLStoreViewController.m in Sources */,
 				FBD7BBC81BB43669001C9D34 /* storyAudio.xcdatamodeld in Sources */,
-				FBD7BBFC1BB454C2001C9D34 /* JLMainViewTableViewCell.m in Sources */,
 				FBD7BBC51BB43669001C9D34 /* AppDelegate.m in Sources */,
+				FBE1A90D1BB527AD00B93B72 /* JLMainViewTableViewCell.m in Sources */,
 				FBD7BBCB1BB43669001C9D34 /* ViewController.m in Sources */,
+				FBE1A9141BB52C6F00B93B72 /* JLBuyViewController.m in Sources */,
 				FBD7BBF61BB45437001C9D34 /* JLMainViewController.m in Sources */,
 				FBD7BBC21BB43669001C9D34 /* main.m in Sources */,
 			);
