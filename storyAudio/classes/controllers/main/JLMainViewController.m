@@ -7,6 +7,8 @@
 //
 
 #import "JLMainViewController.h"
+#import "JLStoreViewController.h"
+#import "JLBuyViewController.h"
 
 @interface JLMainViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -37,6 +39,14 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];// 取消选中
     
     if (indexPath.row == 1) {
+        
+        JLStoreViewController *storeVC = [[JLStoreViewController alloc]initWithNibName:@"JLStoreViewController" bundle:nil];
+        [self.navigationController pushViewController:storeVC animated:YES];
+        
+    }else {
+        
+        JLBuyViewController *buyViewController = [[JLBuyViewController alloc]initWithNibName:@"JLBuyViewController" bundle:nil];
+        [self.navigationController pushViewController:buyViewController animated:YES];
         
     }
     

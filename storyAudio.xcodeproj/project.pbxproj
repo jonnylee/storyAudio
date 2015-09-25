@@ -26,6 +26,8 @@
 		FBE1A9151BB52C6F00B93B72 /* JLBuyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE1A9131BB52C6F00B93B72 /* JLBuyViewController.xib */; };
 		FBE1A9191BB52CA400B93B72 /* JLBuyTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE1A9171BB52CA400B93B72 /* JLBuyTableViewCell.m */; };
 		FBE1A91A1BB52CA400B93B72 /* JLBuyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE1A9181BB52CA400B93B72 /* JLBuyTableViewCell.xib */; };
+		FBE1A9201BB5528A00B93B72 /* JLBuyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE1A91E1BB5528A00B93B72 /* JLBuyDetailViewController.m */; };
+		FBE1A9211BB5528A00B93B72 /* JLBuyDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE1A91F1BB5528A00B93B72 /* JLBuyDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,9 @@
 		FBE1A9161BB52CA400B93B72 /* JLBuyTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLBuyTableViewCell.h; sourceTree = "<group>"; };
 		FBE1A9171BB52CA400B93B72 /* JLBuyTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLBuyTableViewCell.m; sourceTree = "<group>"; };
 		FBE1A9181BB52CA400B93B72 /* JLBuyTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JLBuyTableViewCell.xib; sourceTree = "<group>"; };
+		FBE1A91D1BB5528A00B93B72 /* JLBuyDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLBuyDetailViewController.h; sourceTree = "<group>"; };
+		FBE1A91E1BB5528A00B93B72 /* JLBuyDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLBuyDetailViewController.m; sourceTree = "<group>"; };
+		FBE1A91F1BB5528A00B93B72 /* JLBuyDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JLBuyDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -204,6 +209,7 @@
 		FBD7BBEB1BB452BB001C9D34 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FBE1A91B1BB5524300B93B72 /* buyDetail */,
 				FBD7BBF01BB45411001C9D34 /* buy */,
 				FBD7BBF11BB45411001C9D34 /* main */,
 				FBD7BBF21BB45411001C9D34 /* store */,
@@ -301,6 +307,24 @@
 			path = view;
 			sourceTree = "<group>";
 		};
+		FBE1A91B1BB5524300B93B72 /* buyDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FBE1A91C1BB5525500B93B72 /* view */,
+				FBE1A91D1BB5528A00B93B72 /* JLBuyDetailViewController.h */,
+				FBE1A91E1BB5528A00B93B72 /* JLBuyDetailViewController.m */,
+				FBE1A91F1BB5528A00B93B72 /* JLBuyDetailViewController.xib */,
+			);
+			path = buyDetail;
+			sourceTree = "<group>";
+		};
+		FBE1A91C1BB5525500B93B72 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -391,6 +415,7 @@
 				FBD7BBD01BB43669001C9D34 /* Images.xcassets in Resources */,
 				FBE1A9071BB525D600B93B72 /* JLStoreViewController.xib in Resources */,
 				FBD7BBF71BB45437001C9D34 /* JLMainViewController.xib in Resources */,
+				FBE1A9211BB5528A00B93B72 /* JLBuyDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -449,6 +474,7 @@
 				FBD7BBCB1BB43669001C9D34 /* ViewController.m in Sources */,
 				FBE1A9141BB52C6F00B93B72 /* JLBuyViewController.m in Sources */,
 				FBD7BBF61BB45437001C9D34 /* JLMainViewController.m in Sources */,
+				FBE1A9201BB5528A00B93B72 /* JLBuyDetailViewController.m in Sources */,
 				FBD7BBC21BB43669001C9D34 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

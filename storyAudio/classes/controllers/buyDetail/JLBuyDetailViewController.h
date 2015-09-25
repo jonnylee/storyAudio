@@ -1,5 +1,5 @@
 //
-//  JLStoreViewController.h
+//  JLBuyDetailViewController.h
 //  storyAudio
 //
 //  Created by LiuJianxun on 9/25/15.
@@ -8,10 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JLStoreViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
-
-
-
-
+@interface JLBuyDetailViewController : UIViewController
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "JLStoreViewController.h"
+#import "JLBuyDetailViewController.h"
 
 @interface JLStoreViewController ()
 
@@ -17,8 +18,12 @@
 @implementation JLStoreViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    self.tableView.delegate = self;
+    self.tableView.dataSource = self;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -30,6 +35,8 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];// 取消选中
+    
+    JLBuyDetailViewController *buyDetailVC = [[JLBuyDetailViewController alloc]initWithNibName:@"JLBuyDetailViewController" bundle:nil];
     
     
 }
