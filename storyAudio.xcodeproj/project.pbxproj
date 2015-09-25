@@ -20,6 +20,8 @@
 		FBD7BBF71BB45437001C9D34 /* JLMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBD7BBF51BB45437001C9D34 /* JLMainViewController.xib */; };
 		FBD7BBFC1BB454C2001C9D34 /* JLMainViewTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD7BBFA1BB454C2001C9D34 /* JLMainViewTableViewCell.m */; };
 		FBD7BBFD1BB454C2001C9D34 /* JLMainViewTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBD7BBFB1BB454C2001C9D34 /* JLMainViewTableViewCell.xib */; };
+		FBE1A9061BB525D600B93B72 /* JLStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FBE1A9041BB525D600B93B72 /* JLStoreViewController.m */; };
+		FBE1A9071BB525D600B93B72 /* JLStoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBE1A9051BB525D600B93B72 /* JLStoreViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,9 @@
 		FBD7BBF91BB454C2001C9D34 /* JLMainViewTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLMainViewTableViewCell.h; sourceTree = "<group>"; };
 		FBD7BBFA1BB454C2001C9D34 /* JLMainViewTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLMainViewTableViewCell.m; sourceTree = "<group>"; };
 		FBD7BBFB1BB454C2001C9D34 /* JLMainViewTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JLMainViewTableViewCell.xib; sourceTree = "<group>"; };
+		FBE1A9031BB525D600B93B72 /* JLStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLStoreViewController.h; sourceTree = "<group>"; };
+		FBE1A9041BB525D600B93B72 /* JLStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLStoreViewController.m; sourceTree = "<group>"; };
+		FBE1A9051BB525D600B93B72 /* JLStoreViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JLStoreViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -246,6 +251,9 @@
 		FBD7BBF21BB45411001C9D34 /* store */ = {
 			isa = PBXGroup;
 			children = (
+				FBE1A9031BB525D600B93B72 /* JLStoreViewController.h */,
+				FBE1A9041BB525D600B93B72 /* JLStoreViewController.m */,
+				FBE1A9051BB525D600B93B72 /* JLStoreViewController.xib */,
 			);
 			path = store;
 			sourceTree = "<group>";
@@ -346,6 +354,7 @@
 				FBD7BBD31BB43669001C9D34 /* LaunchScreen.xib in Resources */,
 				FBD7BBD01BB43669001C9D34 /* Images.xcassets in Resources */,
 				FBD7BBFD1BB454C2001C9D34 /* JLMainViewTableViewCell.xib in Resources */,
+				FBE1A9071BB525D600B93B72 /* JLStoreViewController.xib in Resources */,
 				FBD7BBF71BB45437001C9D34 /* JLMainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -397,6 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBE1A9061BB525D600B93B72 /* JLStoreViewController.m in Sources */,
 				FBD7BBC81BB43669001C9D34 /* storyAudio.xcdatamodeld in Sources */,
 				FBD7BBFC1BB454C2001C9D34 /* JLMainViewTableViewCell.m in Sources */,
 				FBD7BBC51BB43669001C9D34 /* AppDelegate.m in Sources */,

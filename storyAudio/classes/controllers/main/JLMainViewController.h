@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JLMainViewController : UIViewController
-
+@interface JLMainViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+    
 @end
