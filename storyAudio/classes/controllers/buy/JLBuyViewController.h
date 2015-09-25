@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JLBuyViewController : UIViewController
+@interface JLBuyViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
 
 @end

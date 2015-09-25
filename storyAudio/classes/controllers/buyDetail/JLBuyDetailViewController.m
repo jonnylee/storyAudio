@@ -11,6 +11,8 @@
 
 @interface JLBuyDetailViewController ()
 
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+
 @end
 
 @implementation JLBuyDetailViewController
@@ -19,9 +21,9 @@
     [super viewDidLoad];
     
     NSArray *nibContents = [[NSBundle mainBundle] loadNibNamed:@"JLStoryHeadView" owner:nil options:nil];
-    UIView *plainView = [nibContents lastObject];
+    UIView *storyHeadView = [nibContents lastObject];
     
-    
+    self.tableView.tableHeaderView = storyHeadView;
     
 }
 

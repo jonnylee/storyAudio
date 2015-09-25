@@ -8,17 +8,24 @@
 
 #import "JLBuyViewController.h"
 #import "JLStoreViewController.h"
+#import "JLBuyDetailViewController.h"
 
 @interface JLBuyViewController ()
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
 
 @implementation JLBuyViewController
 
 - (void)viewDidLoad {
+    
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
     self.title = @"我的购买";
+    
+    self.tableView.dataSource = self;
+    self.tableView.delegate = self;
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -31,8 +38,10 @@
 #pragma mark - UITableViewDelegate
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];// 取消选中
     
-    
+    JLBuyDetailViewController *buyDetailVC = [[JLBuyDetailViewController alloc]initWithNibName:@"JLBuyDetailViewController" bundle:nil];
+    [self.navigationController pushViewController:buyDetailVC animated:YES];
     
 }
 
@@ -83,9 +92,9 @@
     }
     
     if(indexPath.row == 0){
-        cell.textLabel.text = @"故事商城";
+        cell.textLabel.text = @"阿里巴巴与四十大盗";
     }else{
-        cell.textLabel.text = @"我的购买";
+        cell.textLabel.text = @"小白兔与大灰狼";
     }
     
     cell.accessoryType = UITableViewCellAccessoryNone;
