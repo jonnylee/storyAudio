@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "JLMainViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    JLMainViewController *mainViewController = [[JLMainViewController alloc] initWithNibName:@"JLMainViewController" bundle:nil];
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainViewController];
+    
     return YES;
 }
 
