@@ -12,7 +12,7 @@
 
 @interface JLMainViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-
+    
 @end
 
 @implementation JLMainViewController
@@ -21,10 +21,15 @@
     
     [super viewDidLoad];
     
-    self.navigationController.title = @"儿童有声读物";
+    self.title = @"儿童有声读物";
     
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
+    
+    //设置分割线，貌似没什么用
+    if ([_tableView respondsToSelector:@selector(setSeparatorInset:)]) {
+        [_tableView setSeparatorInset:UIEdgeInsetsZero];
+    }
     
 }
 
@@ -38,7 +43,7 @@
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];// 取消选中
     
-    if (indexPath.row == 1) {
+    if (indexPath.row == 0) {
         
         JLStoreViewController *storeVC = [[JLStoreViewController alloc]initWithNibName:@"JLStoreViewController" bundle:nil];
         [self.navigationController pushViewController:storeVC animated:YES];

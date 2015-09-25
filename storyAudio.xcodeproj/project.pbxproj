@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8D756356CD7C941B71CEC0AE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 971F8B39DAEA935011C6D43E /* libPods.a */; };
+		FBAFCED01BB5B3F200A79F3A /* JLStoryHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAFCECF1BB5B3F200A79F3A /* JLStoryHeadView.m */; };
+		FBAFCED21BB5B44E00A79F3A /* JLStoryHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBAFCED11BB5B44E00A79F3A /* JLStoryHeadView.xib */; };
 		FBD7BBC21BB43669001C9D34 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD7BBC11BB43669001C9D34 /* main.m */; };
 		FBD7BBC51BB43669001C9D34 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FBD7BBC41BB43669001C9D34 /* AppDelegate.m */; };
 		FBD7BBC81BB43669001C9D34 /* storyAudio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBD7BBC61BB43669001C9D34 /* storyAudio.xcdatamodeld */; };
@@ -44,6 +46,9 @@
 		67BCFBEC51CC16AF15881E42 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		971F8B39DAEA935011C6D43E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		97305F5D2CB12B526A5E05A2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FBAFCECE1BB5B3F200A79F3A /* JLStoryHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLStoryHeadView.h; sourceTree = "<group>"; };
+		FBAFCECF1BB5B3F200A79F3A /* JLStoryHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLStoryHeadView.m; sourceTree = "<group>"; };
+		FBAFCED11BB5B44E00A79F3A /* JLStoryHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JLStoryHeadView.xib; sourceTree = "<group>"; };
 		FBD7BBBC1BB43669001C9D34 /* storyAudio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = storyAudio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBD7BBC01BB43669001C9D34 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBD7BBC11BB43669001C9D34 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -321,6 +326,9 @@
 		FBE1A91C1BB5525500B93B72 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				FBAFCECE1BB5B3F200A79F3A /* JLStoryHeadView.h */,
+				FBAFCECF1BB5B3F200A79F3A /* JLStoryHeadView.m */,
+				FBAFCED11BB5B44E00A79F3A /* JLStoryHeadView.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -415,6 +423,7 @@
 				FBD7BBD01BB43669001C9D34 /* Images.xcassets in Resources */,
 				FBE1A9071BB525D600B93B72 /* JLStoreViewController.xib in Resources */,
 				FBD7BBF71BB45437001C9D34 /* JLMainViewController.xib in Resources */,
+				FBAFCED21BB5B44E00A79F3A /* JLStoryHeadView.xib in Resources */,
 				FBE1A9211BB5528A00B93B72 /* JLBuyDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,6 +483,7 @@
 				FBD7BBCB1BB43669001C9D34 /* ViewController.m in Sources */,
 				FBE1A9141BB52C6F00B93B72 /* JLBuyViewController.m in Sources */,
 				FBD7BBF61BB45437001C9D34 /* JLMainViewController.m in Sources */,
+				FBAFCED01BB5B3F200A79F3A /* JLStoryHeadView.m in Sources */,
 				FBE1A9201BB5528A00B93B72 /* JLBuyDetailViewController.m in Sources */,
 				FBD7BBC21BB43669001C9D34 /* main.m in Sources */,
 			);
@@ -607,6 +617,7 @@
 				INFOPLIST_FILE = storyAudio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -618,6 +629,7 @@
 				INFOPLIST_FILE = storyAudio/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

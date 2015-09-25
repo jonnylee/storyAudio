@@ -15,15 +15,21 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="CUl-6k-jti">
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="CUl-6k-jti">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="CUl-6k-jti" secondAttribute="trailing" id="WsN-lb-1hz"/>
+                <constraint firstItem="CUl-6k-jti" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dtB-e7-fzh"/>
+                <constraint firstAttribute="bottom" secondItem="CUl-6k-jti" secondAttribute="bottom" id="mX8-gg-YKZ"/>
+                <constraint firstItem="CUl-6k-jti" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zUP-0A-DmW"/>
+            </constraints>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <point key="canvasLocation" x="31.5" y="312.5"/>
+            <point key="canvasLocation" x="50.5" y="288.5"/>
         </view>
     </objects>
 </document>

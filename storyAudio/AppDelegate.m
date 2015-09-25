@@ -18,6 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    [self.window makeKeyAndVisible];
+    
     JLMainViewController *mainViewController = [[JLMainViewController alloc] initWithNibName:@"JLMainViewController" bundle:nil];
     
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainViewController];

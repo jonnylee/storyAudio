@@ -21,6 +21,8 @@
     
     [super viewDidLoad];
     
+    self.title = @"商店";
+    
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
     
@@ -37,8 +39,7 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];// 取消选中
     
     JLBuyDetailViewController *buyDetailVC = [[JLBuyDetailViewController alloc]initWithNibName:@"JLBuyDetailViewController" bundle:nil];
-    
-    
+    [self.navigationController pushViewController:buyDetailVC animated:YES];
 }
 
 
