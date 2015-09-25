@@ -10,7 +10,7 @@
             <rect key="frame" x="0.0" y="0.0" width="407" height="242"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="avQ-C0-iBg">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cjdhw.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="avQ-C0-iBg" customClass="I">
                     <rect key="frame" x="0.0" y="0.0" width="407" height="242"/>
                 </imageView>
             </subviews>
@@ -25,4 +25,7 @@
             <point key="canvasLocation" x="487.5" y="109"/>
         </view>
     </objects>
+    <resources>
+        <image name="cjdhw.jpg" width="500" height="574"/>
+    </resources>
 </document>

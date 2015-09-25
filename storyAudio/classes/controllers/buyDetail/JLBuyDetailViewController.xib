@@ -6,7 +6,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JLBuyDetailViewController">
             <connections>
-                <outlet property="tableView" destination="ehQ-FS-y9v" id="Ado-4y-HEf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -15,20 +14,34 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="ehQ-FS-y9v">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cjdhw.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="QNb-WE-Kbx">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                </tableView>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V4z-Ws-hUJ">
+                    <rect key="frame" x="137.5" y="587" width="100" height="30"/>
+                    <color key="backgroundColor" red="0.62738236823544824" green="1" blue="0.046440739041979984" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="100" id="3Ut-xX-D1r"/>
+                    </constraints>
+                    <state key="normal" title="立即购买">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="ehQ-FS-y9v" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9IP-b8-opw"/>
-                <constraint firstAttribute="bottom" secondItem="ehQ-FS-y9v" secondAttribute="bottom" id="CHW-dc-W4p"/>
-                <constraint firstItem="ehQ-FS-y9v" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Or5-rC-vOl"/>
-                <constraint firstAttribute="trailing" secondItem="ehQ-FS-y9v" secondAttribute="trailing" id="cKp-C1-VqH"/>
+                <constraint firstAttribute="trailing" secondItem="QNb-WE-Kbx" secondAttribute="trailing" id="4VH-ix-SV8"/>
+                <constraint firstAttribute="bottom" secondItem="QNb-WE-Kbx" secondAttribute="bottom" id="MTB-Gu-kAx"/>
+                <constraint firstAttribute="bottom" secondItem="V4z-Ws-hUJ" secondAttribute="bottom" constant="50" id="f2b-dV-mkG"/>
+                <constraint firstAttribute="centerX" secondItem="V4z-Ws-hUJ" secondAttribute="centerX" id="iJn-sw-vpR"/>
+                <constraint firstItem="QNb-WE-Kbx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="liG-sA-cdO"/>
+                <constraint firstItem="QNb-WE-Kbx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="oBe-9O-zpO"/>
             </constraints>
-            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <nil key="simulatedTopBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>
     </objects>
+    <resources>
+        <image name="cjdhw.jpg" width="500" height="574"/>
+    </resources>
 </document>
