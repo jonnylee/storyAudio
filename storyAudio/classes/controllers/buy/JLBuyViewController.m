@@ -10,9 +10,11 @@
 #import "JLStoreViewController.h"
 #import "JLBuyDetailViewController.h"
 #import "JLStoryDetailViewController.h"
+#import "JLBuyCollectionViewCell.h"
 
 @interface JLBuyViewController ()
-@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
 
 @end
 
@@ -23,9 +25,8 @@
     [super viewDidLoad];
     
     self.title = @"我的购买";
-    
-    self.tableView.dataSource = self;
-    self.tableView.delegate = self;
+    self.collectionView.dataSource = self;
+    self.collectionView.delegate = self;
     
 }
 
@@ -34,78 +35,66 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-
-#pragma mark - UITableViewDelegate
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    
-    [tableView deselectRowAtIndexPath:indexPath animated:YES];// 取消选中
-    
-    //已购买故事详情
-    JLBuyDetailViewController *buyDetailVC = [[JLBuyDetailViewController alloc]initWithNibName:@"JLBuyDetailViewController" bundle:nil];
-    
-    [self.navigationController pushViewController:buyDetailVC animated:YES];
-    
+//定义展示的UICollectionViewCell的个数
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 10;
 }
 
-
-#pragma mark - UITableViewDataSource
-//section头部
--(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-    return nil;
+//定义展示的Section的个数
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
 }
 
-
-//组头高
--(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return 0 ;
-}
-
-
--(CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
-    return 0 ;
-}
-
-
-//组数
--(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1 ;
-}
-
-
-//行数
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 2;
-}
-
-
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 120 ;
-}
-
-
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+//每个UICollectionView展示的内容
+-(UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *cellStr= @"cell";
+//    static NSString * CellIdentifier = @"GradientCell";
+//    UICollectionViewCell * cell = [collectionView dequeueReusableCellWithReuseIdentifier:CellIdentifier forIndexPath:indexPath];
+//    cell.backgroundColor = [UIColor colorWithRed:((10 * indexPath.row) / 255.0) green:((20 * indexPath.row)/255.0) blue:((30 * indexPath.row)/255.0) alpha:1.0f];
+//    return cell;
+
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellStr];
+    static NSString * CellIdentifier = @"JLBuyCollectionViewCell";
     
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellStr];
-    }
+    // Register nib file for the cell
+    UINib *nib = [UINib nibWithNibName:@"JLBuyCollectionViewCell"
+                                bundle: [NSBundle mainBundle]];
     
-    if(indexPath.row == 0){
-        cell.textLabel.text = @"超级大话王";
-    }else{
-        cell.textLabel.text = @"超级大话王";
-    }
+    [collectionView registerNib:nib forCellWithReuseIdentifier:CellIdentifier];
     
-    cell.accessoryType = UITableViewCellAccessoryNone;
-    //    cell.selectionStyle = UITableViewCellSelectionStyleNone;//设置点击后没有效果
+    JLBuyCollectionViewCell *cell = [[JLBuyCollectionViewCell alloc]init];
+    // Set up the reuse identifier
+    cell = [collectionView dequeueReusableCellWithReuseIdentifier: CellIdentifier
+                                                     forIndexPath:indexPath];
     
     return cell;
     
 }
+
+#pragma mark --UICollectionViewDelegateFlowLayout
+//定义每个UICollectionView 的大小
+- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath  {
+    return CGSizeMake(220, 220);
+}
+
+//定义每个UICollectionView 的 margin
+-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section {
+    return UIEdgeInsetsMake(10, 10, 10, 10);
+}
+
+#pragma mark --UICollectionViewDelegate
+//UICollectionView被选中时调用的方法
+-(void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    JLBuyDetailViewController *buyDetailVC = [[JLBuyDetailViewController alloc]initWithNibName:@"JLBuyDetailViewController" bundle:nil];
+    
+    [self.navigationController pushViewController:buyDetailVC animated:YES];
+}
+
+//返回这个UICollectionView是否可以被选择
+-(BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
 
 
 @end

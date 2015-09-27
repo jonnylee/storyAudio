@@ -7,6 +7,7 @@
 //
 
 #import "JLStory1ViewController.h"
+#import "AudioFactory.h"
 
 
 @interface JLStory1ViewController ()
@@ -46,24 +47,14 @@
     firstSingleFingerOne4.numberOfTapsRequired = 1; //tap次数
     [_view4 addGestureRecognizer:firstSingleFingerOne4];
     
-    NSString *string = [[NSBundle mainBundle] pathForResource:@"ysbg" ofType:@"mp3"];
-    //把音频文件转换成url格式
-    NSURL *url = [NSURL fileURLWithPath:string];
-    //初始化音频类 并且添加播放文件
-    _avAudioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
-    //设置代理
-    _avAudioPlayer.delegate = self;
+    _avAudioPlayer = [AudioFactory sharedManager];
     
-    //设置初始音量大小
-    _avAudioPlayer.volume = 1;
-    //    _avAudioPlayer.currentTime = 10;
-    
-    
-    //设置音乐播放次数  -1为一直循环
-    _avAudioPlayer.numberOfLoops = -1;
-    
+    if (_avAudioPlayer) {
+        [_avAudioPlayer stop];
+    }
     
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

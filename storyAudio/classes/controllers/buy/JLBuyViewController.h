@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface JLBuyViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface JLBuyViewController : UIViewController<UICollectionViewDataSource,UICollectionViewDelegate,UICollectionViewDelegateFlowLayout>
+
+    
 
 @end
