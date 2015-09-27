@@ -7,6 +7,7 @@
 //
 
 #import "JLBuyDetailViewController.h"
+#import "JLStoryDetailViewController.h"
 
 
 @interface JLBuyDetailViewController ()
@@ -19,6 +20,13 @@
     [super viewDidLoad];
     
     
+}
+
+- (IBAction)showStoryDetail:(id)sender {
+    
+    JLStoryDetailViewController *storyDetailVC = [[JLStoryDetailViewController alloc]init];
+    
+    [self.navigationController pushViewController:storyDetailVC animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

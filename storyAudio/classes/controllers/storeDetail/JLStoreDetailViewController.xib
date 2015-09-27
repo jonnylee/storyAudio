@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JLStoryDetailViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JLStoreDetailViewController">
             <connections>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -14,25 +14,24 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cjdhw.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Om9-bY-DmA">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cjdhw.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="J3L-6P-caL">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lSr-Df-GTT">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UIQ-yz-Hgf">
                     <rect key="frame" x="157" y="587" width="60" height="30"/>
-                    <color key="backgroundColor" red="0.62738236820000004" green="1" blue="0.046440739039999998" alpha="1" colorSpace="calibratedRGB"/>
-                    <state key="normal" title="开始阅读">
+                    <state key="normal" title="立即购买">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                 </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstItem="Om9-bY-DmA" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KQw-w0-P95"/>
-                <constraint firstAttribute="bottom" secondItem="Om9-bY-DmA" secondAttribute="bottom" id="YQ5-MY-UCI"/>
-                <constraint firstAttribute="trailing" secondItem="Om9-bY-DmA" secondAttribute="trailing" id="ba5-BN-Pu0"/>
-                <constraint firstAttribute="centerX" secondItem="lSr-Df-GTT" secondAttribute="centerX" id="hN6-fb-ywY"/>
-                <constraint firstItem="Om9-bY-DmA" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="j9q-DV-IGI"/>
-                <constraint firstAttribute="bottom" secondItem="lSr-Df-GTT" secondAttribute="bottom" constant="50" id="mz3-9k-7i8"/>
+                <constraint firstItem="J3L-6P-caL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="8kn-56-gRQ"/>
+                <constraint firstItem="J3L-6P-caL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="BJK-UF-AWa"/>
+                <constraint firstAttribute="centerX" secondItem="UIQ-yz-Hgf" secondAttribute="centerX" id="E9f-eg-XYs"/>
+                <constraint firstAttribute="bottom" secondItem="UIQ-yz-Hgf" secondAttribute="bottom" constant="50" id="bvE-bT-fRO"/>
+                <constraint firstAttribute="trailing" secondItem="J3L-6P-caL" secondAttribute="trailing" id="eKW-SW-6Qw"/>
+                <constraint firstAttribute="bottom" secondItem="J3L-6P-caL" secondAttribute="bottom" id="hkj-JX-CwX"/>
             </constraints>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
         </view>

@@ -58,7 +58,39 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "storyAudio/classes/controllers/buy/JLBuyViewController.m"
-            timestampString = "464899526.032159"
+            timestampString = "464980065.795646"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "storyAudio/classes/controllers/buy/JLBuyViewController.m"
+            timestampString = "464980065.795646"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "storyAudio/classes/controllers/buy/JLBuyViewController.m"
+            timestampString = "464980065.795646"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "28"
@@ -73,13 +105,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "storyAudio/classes/controllers/buy/JLBuyViewController.m"
-            timestampString = "464899526.032159"
+            filePath = "storyAudio/classes/controllers/storyDetail/story1/JLStory1ViewController.m"
+            timestampString = "465010446.826182"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "26"
-            endingLineNumber = "26"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "53"
+            endingLineNumber = "53"
+            landmarkName = "-handleSingleFingerEvent1:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -89,13 +121,13 @@
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "storyAudio/classes/controllers/buy/JLBuyViewController.m"
-            timestampString = "464899526.032159"
+            filePath = "storyAudio/classes/controllers/storyDetail/story1/JLStory1ViewController.m"
+            timestampString = "465010446.826182"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "-viewDidLoad"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "-handleSingleFingerEvent1:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

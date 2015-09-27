@@ -1,37 +1,117 @@
 //
-//  JLStoryDetailViewController.m
+//  JLStoreDetailViewController.m
 //  storyAudio
 //
-//  Created by LiuJianxun on 9/26/15.
+//  Created by LiuJianxun on 9/27/15.
 //  Copyright (c) 2015 jonny. All rights reserved.
 //
 
 #import "JLStoryDetailViewController.h"
+#import "JLStory1ViewController.h"
 
 @interface JLStoryDetailViewController ()
 
 @end
 
 @implementation JLStoryDetailViewController
+@synthesize pageController, pageContent;
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+- (JLStory1ViewController *)viewControllerAtIndex:(NSUInteger)index
+{
+    // Return the data view controller for the given index.
+    if (([self.pageContent count] == 0) ||
+        (index >= [self.pageContent count])) {
+        return nil;
+    }
+    
+    // Create a new view controller and pass suitable data.
+    JLStory1ViewController *dataViewController = [[JLStory1ViewController alloc] initWithNibName:@"JLStory1ViewController" bundle:nil];
+    
+    return dataViewController;
 }
 
-- (void)didReceiveMemoryWarning {
+
+- (NSUInteger)indexOfViewController:(JLStory1ViewController *)viewController
+{
+//    return [self.pageContent indexOfObject:viewController.dataObject];
+    return 1;
+}
+
+- (void) createContentPages
+{
+    NSMutableArray *pageStrings = [[NSMutableArray alloc] init];
+    for (int i = 1; i < 11; i++)
+    {
+        NSString *contentString = [[NSString alloc]
+                                   initWithFormat:@"<html><head></head><body><h1>Chapter %d</h1><p>大家好，这是第%d页！</p></body></html>", i, i];
+        [pageStrings addObject:contentString];
+    }
+    pageContent = [[NSArray alloc] initWithArray:pageStrings];
+}
+
+- (UIViewController *)pageViewController: (UIPageViewController *)pageViewController viewControllerBeforeViewController: (UIViewController *)viewController
+{
+    NSUInteger index = [self indexOfViewController:
+                        (JLStory1ViewController *)viewController];
+    if ((index == 0) || (index == NSNotFound)) {
+        return nil;
+    }
+    
+    index--;
+    return [self viewControllerAtIndex:index];
+}
+
+- (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
+{
+    NSUInteger index = [self indexOfViewController:
+                        (JLStory1ViewController *)viewController];
+    if (index == NSNotFound) {
+        return nil;
+    }
+    
+    index++;
+    if (index == [self.pageContent count]) {
+        return nil;
+    }
+    return [self viewControllerAtIndex:index];
+}
+
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    [self createContentPages];
+    NSDictionary *options =
+    [NSDictionary dictionaryWithObject:
+     [NSNumber numberWithInteger:UIPageViewControllerSpineLocationMin]
+                                forKey: UIPageViewControllerOptionSpineLocationKey];
+    
+    self.pageController = [[UIPageViewController alloc]
+                           initWithTransitionStyle:UIPageViewControllerTransitionStylePageCurl
+                           navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal
+                           options: options];
+    
+    pageController.dataSource = self;
+    [[pageController view] setFrame:[[self view] bounds]];
+    
+    JLStory1ViewController *initialViewController =
+    [self viewControllerAtIndex:0];
+    NSArray *viewControllers =
+    [NSArray arrayWithObject:initialViewController];
+    
+    [pageController setViewControllers:viewControllers
+                             direction:UIPageViewControllerNavigationDirectionForward
+                              animated:NO
+                            completion:nil];
+    
+    [self addChildViewController:pageController];
+    [[self view] addSubview:[pageController view]];
+    [pageController didMoveToParentViewController:self];
+}
+
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

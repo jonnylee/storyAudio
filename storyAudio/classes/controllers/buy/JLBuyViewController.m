@@ -9,6 +9,7 @@
 #import "JLBuyViewController.h"
 #import "JLStoreViewController.h"
 #import "JLBuyDetailViewController.h"
+#import "JLStoryDetailViewController.h"
 
 @interface JLBuyViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -40,7 +41,9 @@
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];// 取消选中
     
+    //已购买故事详情
     JLBuyDetailViewController *buyDetailVC = [[JLBuyDetailViewController alloc]initWithNibName:@"JLBuyDetailViewController" bundle:nil];
+    
     [self.navigationController pushViewController:buyDetailVC animated:YES];
     
 }
@@ -92,9 +95,9 @@
     }
     
     if(indexPath.row == 0){
-        cell.textLabel.text = @"阿里巴巴与四十大盗";
+        cell.textLabel.text = @"超级大话王";
     }else{
-        cell.textLabel.text = @"小白兔与大灰狼";
+        cell.textLabel.text = @"超级大话王";
     }
     
     cell.accessoryType = UITableViewCellAccessoryNone;

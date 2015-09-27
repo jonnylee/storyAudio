@@ -7,7 +7,7 @@
 //
 
 #import "JLStoreViewController.h"
-#import "JLBuyDetailViewController.h"
+#import "JLStoreDetailViewController.h"
 
 @interface JLStoreViewController ()
 
@@ -38,8 +38,8 @@
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];// 取消选中
     
-    JLBuyDetailViewController *buyDetailVC = [[JLBuyDetailViewController alloc]initWithNibName:@"JLBuyDetailViewController" bundle:nil];
-    [self.navigationController pushViewController:buyDetailVC animated:YES];
+    JLStoreDetailViewController *storeDetailVC = [[JLStoreDetailViewController alloc]initWithNibName:@"JLStoreDetailViewController" bundle:nil];
+    [self.navigationController pushViewController:storeDetailVC animated:YES];
 }
 
 
@@ -89,9 +89,9 @@
     }
     
     if(indexPath.row == 0){
-        cell.textLabel.text = @"阿里巴巴与四十大盗";
+        cell.textLabel.text = @"超级大话王";
     }else{
-        cell.textLabel.text = @"小白兔与大灰狼";
+        cell.textLabel.text = @"超级大话王";
     }
     
     cell.accessoryType = UITableViewCellAccessoryNone;
