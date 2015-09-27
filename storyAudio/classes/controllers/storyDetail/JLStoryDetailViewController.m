@@ -74,15 +74,24 @@
         return nil;
     }
     return [self viewControllerAtIndex:index];
+    
 }
+
+////提供方向变化后，书脊位置的调整，一般是横屏是mid,分2页，竖屏min,分一页
+//-(UIPageViewControllerSpineLocation)pageViewController:(UIPageViewController *)pageViewController spineLocationForInterfaceOrientation:(UIInterfaceOrientation)orientation{
+//    if(UIInterfaceOrientationIsLandscape(orientation)){
+//        return UIPageViewControllerSpineLocationMid;
+//    }else{
+//        return UIPageViewControllerSpineLocationMin;
+//    }
+//}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     [self createContentPages];
-    NSDictionary *options =
-    [NSDictionary dictionaryWithObject:
-     [NSNumber numberWithInteger:UIPageViewControllerSpineLocationMin]
+    NSDictionary *options = [NSDictionary dictionaryWithObject:
+    [NSNumber numberWithInteger:UIPageViewControllerSpineLocationMid]
                                 forKey: UIPageViewControllerOptionSpineLocationKey];
     
     self.pageController = [[UIPageViewController alloc]
@@ -90,13 +99,13 @@
                            navigationOrientation:UIPageViewControllerNavigationOrientationHorizontal
                            options: options];
     
+    pageController.delegate = self;
     pageController.dataSource = self;
     [[pageController view] setFrame:[[self view] bounds]];
     
-    JLStory1ViewController *initialViewController =
-    [self viewControllerAtIndex:0];
-    NSArray *viewControllers =
-    [NSArray arrayWithObject:initialViewController];
+    JLStory1ViewController *initialViewController = [self viewControllerAtIndex:0];
+    
+    NSArray *viewControllers = [NSArray arrayWithObjects:initialViewController,initialViewController, nil];
     
     [pageController setViewControllers:viewControllers
                              direction:UIPageViewControllerNavigationDirectionForward

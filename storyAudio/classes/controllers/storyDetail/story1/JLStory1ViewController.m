@@ -8,7 +8,11 @@
 
 #import "JLStory1ViewController.h"
 
+
 @interface JLStory1ViewController ()
+
+@property (strong,nonatomic) AVAudioPlayer *avAudioPlayer;   //播放器player
+
 @property (weak, nonatomic) IBOutlet UIView *view1;
 @property (weak, nonatomic) IBOutlet UIView *view2;
 @property (weak, nonatomic) IBOutlet UIView *view3;
@@ -42,6 +46,23 @@
     firstSingleFingerOne4.numberOfTapsRequired = 1; //tap次数
     [_view4 addGestureRecognizer:firstSingleFingerOne4];
     
+    NSString *string = [[NSBundle mainBundle] pathForResource:@"ysbg" ofType:@"mp3"];
+    //把音频文件转换成url格式
+    NSURL *url = [NSURL fileURLWithPath:string];
+    //初始化音频类 并且添加播放文件
+    _avAudioPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:url error:nil];
+    //设置代理
+    _avAudioPlayer.delegate = self;
+    
+    //设置初始音量大小
+    _avAudioPlayer.volume = 1;
+    //    _avAudioPlayer.currentTime = 10;
+    
+    
+    //设置音乐播放次数  -1为一直循环
+    _avAudioPlayer.numberOfLoops = -1;
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -50,26 +71,29 @@
 }
 
 -(void)handleSingleFingerEvent1:(UITapGestureRecognizer *)gesture {
-    
-    NSLog(@"");
+    _avAudioPlayer.currentTime = 0;
+    //预播放
+    [_avAudioPlayer play];
     
 }
 
 -(void)handleSingleFingerEvent2:(UITapGestureRecognizer *)gesture {
     
-    NSLog(@"2");
+    _avAudioPlayer.currentTime = 30;
+    [_avAudioPlayer play];
     
 }
 
 -(void)handleSingleFingerEvent3:(UITapGestureRecognizer *)gesture {
     
-    NSLog(@"3");
-    
+    _avAudioPlayer.currentTime = 60;
+    [_avAudioPlayer play];
 }
 
 -(void)handleSingleFingerEvent4:(UITapGestureRecognizer *)gesture {
     
-    NSLog(@"4");
+    _avAudioPlayer.currentTime = 90;
+    [_avAudioPlayer play];
     
 }
 

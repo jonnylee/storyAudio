@@ -12,7 +12,7 @@
 
 @interface JLMainViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-    
+
 @end
 
 @implementation JLMainViewController

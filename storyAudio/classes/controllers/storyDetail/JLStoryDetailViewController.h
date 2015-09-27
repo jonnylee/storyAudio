@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "JLStory1ViewController.h"
 
-@interface JLStoryDetailViewController : UIViewController<UIPageViewControllerDataSource>
+@interface JLStoryDetailViewController : UIViewController<UIPageViewControllerDataSource,UIPageViewControllerDelegate>
 {
     UIPageViewController *pageController;
     NSArray *pageContent;
