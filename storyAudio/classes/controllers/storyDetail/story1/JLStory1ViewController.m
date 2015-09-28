@@ -53,6 +53,8 @@
         [_avAudioPlayer stop];
     }
     
+    [_avAudioPlayer play];
+    
 }
 
 

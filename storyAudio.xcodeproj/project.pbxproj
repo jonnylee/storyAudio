@@ -474,6 +474,7 @@
 				TargetAttributes = {
 					FBD7BBBB1BB43669001C9D34 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = JC87Y29NA6;
 					};
 					FBD7BBD71BB43669001C9D34 = {
 						CreatedOnToolsVersion = 6.4;
@@ -714,9 +715,12 @@
 			baseConfigurationReference = 67BCFBEC51CC16AF15881E42 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = storyAudio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "81f9d26b-980d-471a-94fc-abbad67defdf";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -726,9 +730,12 @@
 			baseConfigurationReference = 97305F5D2CB12B526A5E05A2 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = storyAudio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "81f9d26b-980d-471a-94fc-abbad67defdf";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
