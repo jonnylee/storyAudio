@@ -14,15 +14,25 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>RNFrostedSidebar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>E0A0843C35E4406010926441E5E9C150</key>
+		<key>0E2EF035BE6D553384BC5C3EF34101C7</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F4C297873F18FEDEB5D984BB903EF7E0</key>
+		<key>24609E46735DD81F66DEB18994662BA8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9B0802190D6061E515BAFAF8E62982EF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

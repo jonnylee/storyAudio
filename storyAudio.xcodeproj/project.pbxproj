@@ -8,6 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		8D756356CD7C941B71CEC0AE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 971F8B39DAEA935011C6D43E /* libPods.a */; };
+		FB4960651BC199F10076CC9F /* burger.png in Resources */ = {isa = PBXBuildFile; fileRef = FB49605F1BC199F10076CC9F /* burger.png */; };
+		FB4960661BC199F10076CC9F /* burger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB4960601BC199F10076CC9F /* burger@2x.png */; };
+		FB4960671BC199F10076CC9F /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = FB4960611BC199F10076CC9F /* gear.png */; };
+		FB4960681BC199F10076CC9F /* gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB4960621BC199F10076CC9F /* gear@2x.png */; };
+		FB4960691BC199F10076CC9F /* globe.png in Resources */ = {isa = PBXBuildFile; fileRef = FB4960631BC199F10076CC9F /* globe.png */; };
+		FB49606A1BC199F10076CC9F /* globe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB4960641BC199F10076CC9F /* globe@2x.png */; };
+		FB4960711BC19A2B0076CC9F /* Profile_image.png in Resources */ = {isa = PBXBuildFile; fileRef = FB49606B1BC19A2B0076CC9F /* Profile_image.png */; };
+		FB4960721BC19A2B0076CC9F /* Profile_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB49606C1BC19A2B0076CC9F /* Profile_image@2x.png */; };
+		FB4960731BC19A2B0076CC9F /* profile.png in Resources */ = {isa = PBXBuildFile; fileRef = FB49606D1BC19A2B0076CC9F /* profile.png */; };
+		FB4960741BC19A2B0076CC9F /* profile@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB49606E1BC19A2B0076CC9F /* profile@2x.png */; };
+		FB4960751BC19A2B0076CC9F /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = FB49606F1BC19A2B0076CC9F /* star.png */; };
+		FB4960761BC19A2B0076CC9F /* star@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB4960701BC19A2B0076CC9F /* star@2x.png */; };
 		FBAFCED01BB5B3F200A79F3A /* JLStoryHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = FBAFCECF1BB5B3F200A79F3A /* JLStoryHeadView.m */; };
 		FBAFCED21BB5B44E00A79F3A /* JLStoryHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBAFCED11BB5B44E00A79F3A /* JLStoryHeadView.xib */; };
 		FBAFCED51BB5D31D00A79F3A /* cjdhw.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FBAFCED41BB5D31D00A79F3A /* cjdhw.jpg */; };
@@ -57,6 +69,18 @@
 		67BCFBEC51CC16AF15881E42 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		971F8B39DAEA935011C6D43E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		97305F5D2CB12B526A5E05A2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FB49605F1BC199F10076CC9F /* burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burger.png; sourceTree = "<group>"; };
+		FB4960601BC199F10076CC9F /* burger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "burger@2x.png"; sourceTree = "<group>"; };
+		FB4960611BC199F10076CC9F /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
+		FB4960621BC199F10076CC9F /* gear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gear@2x.png"; sourceTree = "<group>"; };
+		FB4960631BC199F10076CC9F /* globe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = globe.png; sourceTree = "<group>"; };
+		FB4960641BC199F10076CC9F /* globe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "globe@2x.png"; sourceTree = "<group>"; };
+		FB49606B1BC19A2B0076CC9F /* Profile_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Profile_image.png; sourceTree = "<group>"; };
+		FB49606C1BC19A2B0076CC9F /* Profile_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Profile_image@2x.png"; sourceTree = "<group>"; };
+		FB49606D1BC19A2B0076CC9F /* profile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = profile.png; sourceTree = "<group>"; };
+		FB49606E1BC19A2B0076CC9F /* profile@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile@2x.png"; sourceTree = "<group>"; };
+		FB49606F1BC19A2B0076CC9F /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
+		FB4960701BC19A2B0076CC9F /* star@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star@2x.png"; sourceTree = "<group>"; };
 		FBAFCECE1BB5B3F200A79F3A /* JLStoryHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLStoryHeadView.h; sourceTree = "<group>"; };
 		FBAFCECF1BB5B3F200A79F3A /* JLStoryHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLStoryHeadView.m; sourceTree = "<group>"; };
 		FBAFCED11BB5B44E00A79F3A /* JLStoryHeadView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JLStoryHeadView.xib; sourceTree = "<group>"; };
@@ -147,9 +171,29 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		FB49605E1BC199F10076CC9F /* frostedSidebar */ = {
+			isa = PBXGroup;
+			children = (
+				FB49606B1BC19A2B0076CC9F /* Profile_image.png */,
+				FB49606C1BC19A2B0076CC9F /* Profile_image@2x.png */,
+				FB49606D1BC19A2B0076CC9F /* profile.png */,
+				FB49606E1BC19A2B0076CC9F /* profile@2x.png */,
+				FB49606F1BC19A2B0076CC9F /* star.png */,
+				FB4960701BC19A2B0076CC9F /* star@2x.png */,
+				FB49605F1BC199F10076CC9F /* burger.png */,
+				FB4960601BC199F10076CC9F /* burger@2x.png */,
+				FB4960611BC199F10076CC9F /* gear.png */,
+				FB4960621BC199F10076CC9F /* gear@2x.png */,
+				FB4960631BC199F10076CC9F /* globe.png */,
+				FB4960641BC199F10076CC9F /* globe@2x.png */,
+			);
+			path = frostedSidebar;
+			sourceTree = "<group>";
+		};
 		FBAFCED31BB5D31D00A79F3A /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				FB49605E1BC199F10076CC9F /* frostedSidebar */,
 				FBD8A46C1BB7768C006EF29C /* story */,
 				FBAFCED41BB5D31D00A79F3A /* cjdhw.jpg */,
 			);
@@ -506,19 +550,31 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB4960711BC19A2B0076CC9F /* Profile_image.png in Resources */,
+				FB49606A1BC199F10076CC9F /* globe@2x.png in Resources */,
+				FB4960761BC19A2B0076CC9F /* star@2x.png in Resources */,
+				FB4960751BC19A2B0076CC9F /* star.png in Resources */,
 				FBD7BBCE1BB43669001C9D34 /* Main.storyboard in Resources */,
 				FBE1A9151BB52C6F00B93B72 /* JLBuyViewController.xib in Resources */,
+				FB4960651BC199F10076CC9F /* burger.png in Resources */,
+				FB4960681BC199F10076CC9F /* gear@2x.png in Resources */,
 				FBAFCED51BB5D31D00A79F3A /* cjdhw.jpg in Resources */,
 				FBE1A90E1BB527AD00B93B72 /* JLMainViewTableViewCell.xib in Resources */,
 				FBD7BBD31BB43669001C9D34 /* LaunchScreen.xib in Resources */,
 				FBD7BBD01BB43669001C9D34 /* Images.xcassets in Resources */,
+				FB4960661BC199F10076CC9F /* burger@2x.png in Resources */,
 				FBE1A9071BB525D600B93B72 /* JLStoreViewController.xib in Resources */,
 				FBD8A46B1BB77636006EF29C /* JLStory1ViewController.xib in Resources */,
 				FBD7BBF71BB45437001C9D34 /* JLMainViewController.xib in Resources */,
 				FBAFCEE11BB709D900A79F3A /* JLStoreDetailViewController.xib in Resources */,
+				FB4960671BC199F10076CC9F /* gear.png in Resources */,
+				FB4960741BC19A2B0076CC9F /* profile@2x.png in Resources */,
 				FBD8A4771BB84830006EF29C /* JLBuyCollectionViewCell.xib in Resources */,
+				FB4960691BC199F10076CC9F /* globe.png in Resources */,
+				FB4960731BC19A2B0076CC9F /* profile.png in Resources */,
 				FBD8A4721BB783DA006EF29C /* ysbg.mp3 in Resources */,
 				FBAFCEDB1BB5D5C400A79F3A /* JLStoryDetailViewController.xib in Resources */,
+				FB4960721BC19A2B0076CC9F /* Profile_image@2x.png in Resources */,
 				FBAFCED21BB5B44E00A79F3A /* JLStoryHeadView.xib in Resources */,
 				FBD8A46E1BB77699006EF29C /* story1.jpg in Resources */,
 				FBE1A9211BB5528A00B93B72 /* JLBuyDetailViewController.xib in Resources */,

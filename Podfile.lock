@@ -20,11 +20,14 @@ PODS:
   - AFNetworking/UIKit (2.5.4):
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
+  - RNFrostedSidebar (0.2.0)
 
 DEPENDENCIES:
   - AFNetworking (~> 2.5.4)
+  - RNFrostedSidebar (~> 0.2.0)
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
+  RNFrostedSidebar: 9491d8627e5e99b92334d36def432c0faf7ebae4
 
 COCOAPODS: 0.38.2
