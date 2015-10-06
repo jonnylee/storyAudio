@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RNFrostedSidebar.h"
 
-@interface JLMainViewController : UIViewController<UITableViewDataSource,UITableViewDelegate>
+@interface JLMainViewController : UIViewController<UITableViewDataSource,UITableViewDelegate,RNFrostedSidebarDelegate>
     
 @end

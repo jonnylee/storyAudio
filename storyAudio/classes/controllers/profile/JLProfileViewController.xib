@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="JLProfileViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZvJ-N1-3jg">
+                    <rect key="frame" x="10" y="70" width="580" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户名" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t0K-Q4-Oxh">
+                            <rect key="frame" x="10" y="39" width="51" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XHo-mp-AAC">
+                            <rect key="frame" x="80" y="35" width="490" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="centerY" secondItem="XHo-mp-AAC" secondAttribute="centerY" id="5qY-cd-COa"/>
+                        <constraint firstAttribute="trailing" secondItem="XHo-mp-AAC" secondAttribute="trailing" constant="10" id="HUD-bY-Jvu"/>
+                        <constraint firstItem="XHo-mp-AAC" firstAttribute="leading" secondItem="ZvJ-N1-3jg" secondAttribute="leading" constant="80" id="ROW-t1-w20"/>
+                        <constraint firstAttribute="height" constant="100" id="V50-KK-N85"/>
+                        <constraint firstItem="XHo-mp-AAC" firstAttribute="leading" secondItem="t0K-Q4-Oxh" secondAttribute="trailing" constant="10" id="Zbw-sS-nWh"/>
+                        <constraint firstAttribute="centerY" secondItem="t0K-Q4-Oxh" secondAttribute="centerY" id="c0w-GV-BlV"/>
+                        <constraint firstItem="t0K-Q4-Oxh" firstAttribute="leading" secondItem="ZvJ-N1-3jg" secondAttribute="leading" constant="10" id="l1F-eF-Txi"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Zbw-sS-nWh"/>
+                        </mask>
+                    </variation>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NtY-fs-vKv">
+                    <rect key="frame" x="10" y="190" width="580" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="密码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZg-41-xHt">
+                            <rect key="frame" x="10" y="39" width="34" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zAY-mP-sV6">
+                            <rect key="frame" x="80" y="35" width="490" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="zAY-mP-sV6" firstAttribute="leading" secondItem="XZg-41-xHt" secondAttribute="trailing" constant="10" id="DTe-Me-bA9"/>
+                        <constraint firstItem="zAY-mP-sV6" firstAttribute="leading" secondItem="NtY-fs-vKv" secondAttribute="leading" constant="80" id="GmI-OR-JA4"/>
+                        <constraint firstAttribute="trailing" secondItem="zAY-mP-sV6" secondAttribute="trailing" constant="10" id="TcB-wg-i2i"/>
+                        <constraint firstAttribute="height" constant="100" id="VrK-o2-5Wt"/>
+                        <constraint firstAttribute="centerY" secondItem="XZg-41-xHt" secondAttribute="centerY" id="b9n-zO-b1Y"/>
+                        <constraint firstAttribute="centerY" secondItem="zAY-mP-sV6" secondAttribute="centerY" id="cO7-MO-lqR"/>
+                        <constraint firstItem="XZg-41-xHt" firstAttribute="leading" secondItem="NtY-fs-vKv" secondAttribute="leading" constant="10" id="cvR-sy-Wd6"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="DTe-Me-bA9"/>
+                        </mask>
+                    </variation>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="NtY-fs-vKv" firstAttribute="leading" secondItem="ZvJ-N1-3jg" secondAttribute="leading" id="FZ7-7Z-vJF"/>
+                <constraint firstAttribute="trailing" secondItem="ZvJ-N1-3jg" secondAttribute="trailing" constant="10" id="arf-bA-yIa"/>
+                <constraint firstItem="NtY-fs-vKv" firstAttribute="top" secondItem="ZvJ-N1-3jg" secondAttribute="bottom" constant="20" id="bX1-Mu-QYL"/>
+                <constraint firstItem="ZvJ-N1-3jg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="10" id="kYe-oe-1bx"/>
+                <constraint firstItem="ZvJ-N1-3jg" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="70" id="uxL-gx-naP"/>
+                <constraint firstAttribute="trailing" secondItem="NtY-fs-vKv" secondAttribute="trailing" constant="10" id="xwA-6a-TkE"/>
+                <constraint firstAttribute="bottom" secondItem="ZvJ-N1-3jg" secondAttribute="bottom" constant="10" id="zqr-QO-ppO"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="zqr-QO-ppO"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="304" y="201"/>
+        </view>
+    </objects>
+</document>

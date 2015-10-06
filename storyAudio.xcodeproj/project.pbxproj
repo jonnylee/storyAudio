@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		8D756356CD7C941B71CEC0AE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 971F8B39DAEA935011C6D43E /* libPods.a */; };
+		FB2EF6F61BC4381E00FA6B29 /* JLProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2EF6F41BC4381E00FA6B29 /* JLProfileViewController.m */; };
+		FB2EF6F71BC4381E00FA6B29 /* JLProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB2EF6F51BC4381E00FA6B29 /* JLProfileViewController.xib */; };
 		FB4960651BC199F10076CC9F /* burger.png in Resources */ = {isa = PBXBuildFile; fileRef = FB49605F1BC199F10076CC9F /* burger.png */; };
 		FB4960661BC199F10076CC9F /* burger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB4960601BC199F10076CC9F /* burger@2x.png */; };
 		FB4960671BC199F10076CC9F /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = FB4960611BC199F10076CC9F /* gear.png */; };
@@ -69,6 +71,9 @@
 		67BCFBEC51CC16AF15881E42 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		971F8B39DAEA935011C6D43E /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		97305F5D2CB12B526A5E05A2 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FB2EF6F31BC4381E00FA6B29 /* JLProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLProfileViewController.h; sourceTree = "<group>"; };
+		FB2EF6F41BC4381E00FA6B29 /* JLProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLProfileViewController.m; sourceTree = "<group>"; };
+		FB2EF6F51BC4381E00FA6B29 /* JLProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JLProfileViewController.xib; sourceTree = "<group>"; };
 		FB49605F1BC199F10076CC9F /* burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burger.png; sourceTree = "<group>"; };
 		FB4960601BC199F10076CC9F /* burger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "burger@2x.png"; sourceTree = "<group>"; };
 		FB4960611BC199F10076CC9F /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
@@ -169,6 +174,16 @@
 				971F8B39DAEA935011C6D43E /* libPods.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB2EF6F21BC4380E00FA6B29 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				FB2EF6F31BC4381E00FA6B29 /* JLProfileViewController.h */,
+				FB2EF6F41BC4381E00FA6B29 /* JLProfileViewController.m */,
+				FB2EF6F51BC4381E00FA6B29 /* JLProfileViewController.xib */,
+			);
+			path = profile;
 			sourceTree = "<group>";
 		};
 		FB49605E1BC199F10076CC9F /* frostedSidebar */ = {
@@ -316,6 +331,7 @@
 		FBD7BBEB1BB452BB001C9D34 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				FB2EF6F21BC4380E00FA6B29 /* profile */,
 				FBAFCEDC1BB709BB00A79F3A /* storeDetail */,
 				FBAFCED61BB5D56600A79F3A /* storyDetail */,
 				FBE1A91B1BB5524300B93B72 /* buyDetail */,
@@ -559,6 +575,7 @@
 				FB4960651BC199F10076CC9F /* burger.png in Resources */,
 				FB4960681BC199F10076CC9F /* gear@2x.png in Resources */,
 				FBAFCED51BB5D31D00A79F3A /* cjdhw.jpg in Resources */,
+				FB2EF6F71BC4381E00FA6B29 /* JLProfileViewController.xib in Resources */,
 				FBE1A90E1BB527AD00B93B72 /* JLMainViewTableViewCell.xib in Resources */,
 				FBD7BBD31BB43669001C9D34 /* LaunchScreen.xib in Resources */,
 				FBD7BBD01BB43669001C9D34 /* Images.xcassets in Resources */,
@@ -638,6 +655,7 @@
 				FBE1A9141BB52C6F00B93B72 /* JLBuyViewController.m in Sources */,
 				FBD7BBF61BB45437001C9D34 /* JLMainViewController.m in Sources */,
 				FBD8A47B1BB85404006EF29C /* AudioFactory.m in Sources */,
+				FB2EF6F61BC4381E00FA6B29 /* JLProfileViewController.m in Sources */,
 				FBAFCED01BB5B3F200A79F3A /* JLStoryHeadView.m in Sources */,
 				FBE1A9201BB5528A00B93B72 /* JLBuyDetailViewController.m in Sources */,
 				FBD7BBC21BB43669001C9D34 /* main.m in Sources */,

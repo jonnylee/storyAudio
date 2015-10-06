@@ -9,9 +9,13 @@
 #import "JLMainViewController.h"
 #import "JLStoreViewController.h"
 #import "JLBuyViewController.h"
+#import "JLProfileViewController.h"
+
 
 @interface JLMainViewController ()
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) NSMutableIndexSet *optionIndices;
 
 @end
 
@@ -31,11 +35,78 @@
         [_tableView setSeparatorInset:UIEdgeInsetsZero];
     }
     
+    UIImage *image = [UIImage imageNamed:@"burger"];
+    
+    
+    UIButton *backViewBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+    backViewBtn.frame = CGRectMake(0, 0, 17, 17);
+    [backViewBtn setImage:image forState:UIControlStateNormal];
+    backViewBtn.backgroundColor  = [UIColor grayColor];
+    
+    [backViewBtn addTarget:self action: @selector(onBurger:)
+          forControlEvents:UIControlEventTouchUpInside];
+    
+    UIBarButtonItem *backItem = [[UIBarButtonItem alloc] initWithCustomView:backViewBtn];
+    self.navigationItem.leftBarButtonItem = backItem;
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)onBurger:(id)sender {
+    NSArray *images = @[
+                        [UIImage imageNamed:@"profile"],
+                        [UIImage imageNamed:@"star"],
+                        [UIImage imageNamed:@"gear"],
+                        
+                        ];
+    NSArray *colors = @[
+                        [UIColor colorWithRed:240/255.f green:159/255.f blue:254/255.f alpha:1],
+                        [UIColor colorWithRed:255/255.f green:137/255.f blue:167/255.f alpha:1],
+                        [UIColor colorWithRed:126/255.f green:242/255.f blue:195/255.f alpha:1]
+                        ];
+    
+    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images selectedIndices:self.optionIndices borderColors:colors];
+    //    RNFrostedSidebar *callout = [[RNFrostedSidebar alloc] initWithImages:images];
+    callout.delegate = self;
+    //    callout.showFromRight = YES;
+    [callout show];
+}
+
+#pragma mark - RNFrostedSidebarDelegate
+
+- (void)sidebar:(RNFrostedSidebar *)sidebar didTapItemAtIndex:(NSUInteger)index {
+    
+    [sidebar dismissAnimated:YES completion:^(BOOL finished) {
+        if (index == 0) {//登陆页面
+            JLProfileViewController *profileVC = [[JLProfileViewController alloc]initWithNibName:@"JLProfileViewController" bundle:nil];
+            [self.navigationController pushViewController:profileVC animated:YES];
+            
+        }else if(index == 1){//我的购买
+            
+            JLBuyViewController *buyVC = [[JLBuyViewController alloc]initWithNibName:@"JLBuyViewController" bundle:nil];
+            [self.navigationController pushViewController:buyVC animated:YES];
+            
+        }else if(index == 2){//设置页面
+            
+        }
+
+    }];
+    
+    
+}
+
+- (void)sidebar:(RNFrostedSidebar *)sidebar didEnable:(BOOL)itemEnabled itemAtIndex:(NSUInteger)index {
+    if (itemEnabled) {
+        [self.optionIndices addIndex:index];
+    }
+    else {
+        [self.optionIndices removeIndex:index];
+    }
 }
 
 #pragma mark - UITableViewDelegate
