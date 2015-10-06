@@ -24,7 +24,7 @@
     
     [super viewDidLoad];
     
-    self.title = @"我的购买";
+    self.title = @"故事商城";
     self.collectionView.dataSource = self;
     self.collectionView.delegate = self;
     

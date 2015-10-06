@@ -13,6 +13,7 @@
 @interface JLStory1ViewController ()
 
 @property (strong,nonatomic) AVAudioPlayer *avAudioPlayer;   //播放器player
+@property (weak, nonatomic) IBOutlet UIImageView *iamge;
 
 @property (weak, nonatomic) IBOutlet UIView *view1;
 @property (weak, nonatomic) IBOutlet UIView *view2;
@@ -26,6 +27,12 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
+    
+    if (!self.imageName) {
+        self.imageName = @"2.jpg";
+    }
+
+    self.iamge.image = [UIImage imageNamed:self.imageName];
     
     UITapGestureRecognizer *firstSingleFingerOne1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleFingerEvent1:)];
     firstSingleFingerOne1.numberOfTouchesRequired = 1; //手指数

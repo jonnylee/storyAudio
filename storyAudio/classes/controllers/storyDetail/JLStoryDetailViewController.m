@@ -24,12 +24,16 @@
         return nil;
     }
     
+    
     // Create a new view controller and pass suitable data.
     JLStory1ViewController *dataViewController = [[JLStory1ViewController alloc] initWithNibName:@"JLStory1ViewController" bundle:nil];
     
+    if (index == 0) {
+        dataViewController.imageName = @"1.jpg";
+    }
+    
     return dataViewController;
 }
-
 
 - (NSUInteger)indexOfViewController:(JLStory1ViewController *)viewController
 {

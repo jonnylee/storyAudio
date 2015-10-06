@@ -10,6 +10,8 @@
 		8D756356CD7C941B71CEC0AE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 971F8B39DAEA935011C6D43E /* libPods.a */; };
 		FB2EF6F61BC4381E00FA6B29 /* JLProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FB2EF6F41BC4381E00FA6B29 /* JLProfileViewController.m */; };
 		FB2EF6F71BC4381E00FA6B29 /* JLProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FB2EF6F51BC4381E00FA6B29 /* JLProfileViewController.xib */; };
+		FB2EF7201BC465FA00FA6B29 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB2EF6F81BC465FA00FA6B29 /* 1.jpg */; };
+		FB2EF7211BC465FA00FA6B29 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = FB2EF6F91BC465FA00FA6B29 /* 2.jpg */; };
 		FB4960651BC199F10076CC9F /* burger.png in Resources */ = {isa = PBXBuildFile; fileRef = FB49605F1BC199F10076CC9F /* burger.png */; };
 		FB4960661BC199F10076CC9F /* burger@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FB4960601BC199F10076CC9F /* burger@2x.png */; };
 		FB4960671BC199F10076CC9F /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = FB4960611BC199F10076CC9F /* gear.png */; };
@@ -74,6 +76,8 @@
 		FB2EF6F31BC4381E00FA6B29 /* JLProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLProfileViewController.h; sourceTree = "<group>"; };
 		FB2EF6F41BC4381E00FA6B29 /* JLProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLProfileViewController.m; sourceTree = "<group>"; };
 		FB2EF6F51BC4381E00FA6B29 /* JLProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JLProfileViewController.xib; sourceTree = "<group>"; };
+		FB2EF6F81BC465FA00FA6B29 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		FB2EF6F91BC465FA00FA6B29 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
 		FB49605F1BC199F10076CC9F /* burger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burger.png; sourceTree = "<group>"; };
 		FB4960601BC199F10076CC9F /* burger@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "burger@2x.png"; sourceTree = "<group>"; };
 		FB4960611BC199F10076CC9F /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
@@ -419,6 +423,8 @@
 		FBD8A46C1BB7768C006EF29C /* story */ = {
 			isa = PBXGroup;
 			children = (
+				FB2EF6F81BC465FA00FA6B29 /* 1.jpg */,
+				FB2EF6F91BC465FA00FA6B29 /* 2.jpg */,
 				FBD8A4711BB783DA006EF29C /* ysbg.mp3 */,
 				FBD8A46D1BB77699006EF29C /* story1.jpg */,
 			);
@@ -568,6 +574,7 @@
 			files = (
 				FB4960711BC19A2B0076CC9F /* Profile_image.png in Resources */,
 				FB49606A1BC199F10076CC9F /* globe@2x.png in Resources */,
+				FB2EF7211BC465FA00FA6B29 /* 2.jpg in Resources */,
 				FB4960761BC19A2B0076CC9F /* star@2x.png in Resources */,
 				FB4960751BC19A2B0076CC9F /* star.png in Resources */,
 				FBD7BBCE1BB43669001C9D34 /* Main.storyboard in Resources */,
@@ -575,6 +582,7 @@
 				FB4960651BC199F10076CC9F /* burger.png in Resources */,
 				FB4960681BC199F10076CC9F /* gear@2x.png in Resources */,
 				FBAFCED51BB5D31D00A79F3A /* cjdhw.jpg in Resources */,
+				FB2EF7201BC465FA00FA6B29 /* 1.jpg in Resources */,
 				FB2EF6F71BC4381E00FA6B29 /* JLProfileViewController.xib in Resources */,
 				FBE1A90E1BB527AD00B93B72 /* JLMainViewTableViewCell.xib in Resources */,
 				FBD7BBD31BB43669001C9D34 /* LaunchScreen.xib in Resources */,

@@ -11,4 +11,8 @@
 
 @interface JLStory1ViewController : UIViewController<AVAudioPlayerDelegate>
 
+
+@property (strong,nonatomic) NSString *imageName;
+
+
 @end
