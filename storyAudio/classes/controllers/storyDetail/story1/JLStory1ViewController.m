@@ -19,6 +19,7 @@
 @property (weak, nonatomic) IBOutlet UIView *view2;
 @property (weak, nonatomic) IBOutlet UIView *view3;
 @property (weak, nonatomic) IBOutlet UIView *view4;
+@property (weak, nonatomic) IBOutlet UIView *view5;
 
 @end
 
@@ -54,14 +55,24 @@
     firstSingleFingerOne4.numberOfTapsRequired = 1; //tap次数
     [_view4 addGestureRecognizer:firstSingleFingerOne4];
     
+    UITapGestureRecognizer *firstSingleFingerOne5 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleFingerEvent5:)];
+    firstSingleFingerOne5.numberOfTouchesRequired = 1; //手指数
+    firstSingleFingerOne5.numberOfTapsRequired = 1; //tap次数
+    [_view5 addGestureRecognizer:firstSingleFingerOne5];
+    
     _avAudioPlayer = [AudioFactory sharedManager];
     
     if (_avAudioPlayer) {
         [_avAudioPlayer stop];
     }
     
-    [_avAudioPlayer play];
-    
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    if (_avAudioPlayer) {
+        [_avAudioPlayer stop];
+    }
 }
 
 
@@ -93,6 +104,13 @@
 -(void)handleSingleFingerEvent4:(UITapGestureRecognizer *)gesture {
     
     _avAudioPlayer.currentTime = 90;
+    [_avAudioPlayer play];
+    
+}
+
+-(void)handleSingleFingerEvent5:(UITapGestureRecognizer *)gesture {
+    
+    _avAudioPlayer.currentTime = 120;
     [_avAudioPlayer play];
     
 }
