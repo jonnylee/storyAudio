@@ -11,6 +11,8 @@
 
 @interface AudioFactory : NSObject
 
++ (AVAudioPlayer *)getCurrentInstance;
 + (AVAudioPlayer *)sharedManager;
++ (AVAudioPlayer *)sharedManagerWithPage:(NSInteger)pageNum;
 
 @end

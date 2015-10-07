@@ -32,7 +32,7 @@
     if (!self.imageName) {
         self.imageName = @"2.jpg";
     }
-
+    
     self.iamge.image = [UIImage imageNamed:self.imageName];
     
     UITapGestureRecognizer *firstSingleFingerOne1 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleFingerEvent1:)];
@@ -54,11 +54,6 @@
     firstSingleFingerOne4.numberOfTouchesRequired = 1; //手指数
     firstSingleFingerOne4.numberOfTapsRequired = 1; //tap次数
     [_view4 addGestureRecognizer:firstSingleFingerOne4];
-    
-    UITapGestureRecognizer *firstSingleFingerOne5 = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleFingerEvent5:)];
-    firstSingleFingerOne5.numberOfTouchesRequired = 1; //手指数
-    firstSingleFingerOne5.numberOfTapsRequired = 1; //tap次数
-    [_view5 addGestureRecognizer:firstSingleFingerOne5];
     
     _avAudioPlayer = [AudioFactory sharedManager];
     
@@ -82,37 +77,60 @@
 }
 
 -(void)handleSingleFingerEvent1:(UITapGestureRecognizer *)gesture {
-    _avAudioPlayer.currentTime = 0;
-    //预播放
-    [_avAudioPlayer play];
+    //判断当前VC的index是否是2
+    [[AudioFactory getCurrentInstance] stop];
+    
+    if(self.index == 0){
+        _avAudioPlayer = [AudioFactory sharedManagerWithPage:2];
+        //预播放
+        [_avAudioPlayer play];
+//        [_avAudioPlayer stop];
+    }
+    
+    
     
 }
 
 -(void)handleSingleFingerEvent2:(UITapGestureRecognizer *)gesture {
     
-    _avAudioPlayer.currentTime = 30;
-    [_avAudioPlayer play];
+    [[AudioFactory getCurrentInstance] stop];
+    
+    if(self.index == 1){
+        _avAudioPlayer = [AudioFactory sharedManagerWithPage:3];
+        //预播放
+        [_avAudioPlayer play];
+    }
+    
+    if (self.index == 2) {
+        _avAudioPlayer = [AudioFactory sharedManagerWithPage:4];
+        //预播放
+        [_avAudioPlayer play];
+    }
     
 }
 
 -(void)handleSingleFingerEvent3:(UITapGestureRecognizer *)gesture {
     
-    _avAudioPlayer.currentTime = 60;
-    [_avAudioPlayer play];
+    [[AudioFactory getCurrentInstance] stop];
+    
+    if(self.index == 3){
+        _avAudioPlayer = [AudioFactory sharedManagerWithPage:5];
+        //预播放
+        [_avAudioPlayer play];
+    }
 }
 
 -(void)handleSingleFingerEvent4:(UITapGestureRecognizer *)gesture {
-    
-    _avAudioPlayer.currentTime = 90;
-    [_avAudioPlayer play];
+    if (_avAudioPlayer) {
+        [_avAudioPlayer stop];
+    }
+    if(self.index == 3){
+        _avAudioPlayer = [AudioFactory sharedManagerWithPage:5];
+        //预播放
+        [_avAudioPlayer play];
+    }
     
 }
 
--(void)handleSingleFingerEvent5:(UITapGestureRecognizer *)gesture {
-    
-    _avAudioPlayer.currentTime = 120;
-    [_avAudioPlayer play];
-    
-}
 
 @end
